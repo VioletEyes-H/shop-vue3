@@ -1,0 +1,51 @@
+{
+  "easycom": {
+    "autoscan": true,
+    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "name": "index",
+      "path": "pages/index/index",
+      "meta": {
+        "auth": false
+      }
+    },
+    {
+      "name": "user",
+      "path": "pages/user/index",
+      "meta": {
+        "auth": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#9A9CEA",
+    "backgroundColor": "#ffffff",
+    // 底部 tabBar 背景色
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "static/tab/me.png",
+        "selectedIconPath": "static/tab/me-active.png"
+      }
+    ]
+  }
+}
