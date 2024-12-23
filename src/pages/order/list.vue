@@ -1,6 +1,6 @@
 <template>
   <view>
-    tststs
+    ddd
   </view>
 </template>
 
