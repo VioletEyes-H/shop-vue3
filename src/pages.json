@@ -10,14 +10,14 @@
   "pages": [
     {
       "name": "index",
-      "path": "pages/index/index",
+      "path": "pages/home/Index",
       "meta": {
         "auth": false
       }
     },
     {
       "name": "order",
-      "path": "pages/order/list",
+      "path": "pages/order/OrderList",
       "meta": {
         "auth": false
       }
@@ -31,7 +31,8 @@
     }
   ],
   "globalStyle": {
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#515151",
@@ -40,13 +41,13 @@
     "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/Index",
         "text": "首页",
         "iconPath": "static/tab/home.png",
         "selectedIconPath": "static/tab/home-active.png"
       },
       {
-        "pagePath": "pages/order/list",
+        "pagePath": "pages/order/OrderList",
         "text": "订单",
         "iconPath": "static/tab/order.png",
         "selectedIconPath": "static/tab/order-active.png"
